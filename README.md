@@ -1,4 +1,4 @@
-twitter-lda
+Twitter Semantic Search Project 
 ===========
 
-Twitter Semantic Project - Latent Dirichlet Allocation (LDA)
+Twitter Semantic Project using Latent Dirichlet Allocation (LDA)
