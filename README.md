@@ -3,6 +3,12 @@ Twitter Semantic Search Project
 
 Twitter Semantic Project using Latent Dirichlet Allocation (LDA)
 
+Setting up the Environment
+====
+You could either use virtualenv and run the following command after activating the virtualenv or just run it in the terminal
+    pip install -r requirements.txt
+    
+    
 Code Help
 ====
     python tweets_collect.py -h
