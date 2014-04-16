@@ -3,8 +3,7 @@ Twitter Semantic Search Project
 
 Twitter Semantic Project using Latent Dirichlet Allocation (LDA)
 
-
-Run the Twitter Collection Code
+Code Help
 ====
     python tweets_collect.py -h
     usage: tt3.py [-h] [-s S] [-e E] date
@@ -15,6 +14,10 @@ Run the Twitter Collection Code
         -h, --help  show this help message and exit
         -s Start file number
         -e End file number
+
+
+Run the Twitter Collection Code
+====
 
     python tweets_collect.py 20110128 -s 20 -e 88
   
