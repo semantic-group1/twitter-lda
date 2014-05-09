@@ -33,6 +33,6 @@ The above code will collect tweets for the TweetsID in for the date 2011-01-28 f
 Generating Sequence Files for Tweets
 ====
 
-   hadoop jar SequenceFileWrite.jar com.sarcasm.dpp.SequenceFileWriteDemo <InputFileNameContainingAllTweets> <OutputSeqFileName>
+    hadoop jar SequenceFileWrite.jar com.sarcasm.dpp.SequenceFileWriteDemo <InputFileNameContainingAllTweets> <OutputSeqFileName>
    
  The above code accepts a file containing all the tweets and prepares a sequence file wherein the key of the sequence file equals the TweetID and the value equals the Tweet. This forms the input for the second stage of Mahout cvb program.  
