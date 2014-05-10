@@ -60,6 +60,8 @@ Apache Mahout
 
 Post-Processing 
 ===
+The post-processing scripts are run on the input folder having the term-topic matrix as part-files. The queryfile contains one test query per line to obtain the top 1000 ranked tweets for each query.
+
     python vectorize.py <input-path> <queryfile>
     python CDS.py <input-path> <querfile>
     python output.py <input-path> <final-output-path>
