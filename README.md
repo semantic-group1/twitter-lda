@@ -45,12 +45,15 @@ To search for queries (in a queryfile) across the Lucene index, we use the follo
 
     ./searchDocuments.sh <command/queryFile>
 
-Apache Mahout (Collapsed Variational Bayes Algorithm - CVB)
+Apache Mahout 
 ===
-    
+(Collapsed Variational Bayes Algorithm - CVB)
+
     hadoop jar mahout-examples-0.8-job.jar org.apache.mahout.text.SequenceFilesFromDirectory -i /se/dataset -o /se/outputseq -xm sequential
     ./mahout seq2sparse -i /se/outputseq -o /se/outputsparsedvec --namedVector -wt tf
     ./mahout rowid -i /mahoutlda/outputsparsedvec/tf-vectors -o /mahoutlda/matrix
+    
     ./mahout cvb -i /mahoutlda/matrix/matrix -o /mahoutlda/lda-output -mt /mahoutlda/ldaoutput/models -dt /mahoutlda/ldaoutput/docTopics -dict /mahoutlda/outputsparsedvec/dictionary.file-0 -k 400 -x 40 -ow
+    
     ./mahout vectordump -i /mahoutlda/ldaoutput/docTopics -o /mahoutlda/ldaoutput/output-docTopics -p true -d /mahoutlda/outputsparsedvec/dictionary.file-0 -dt sequencefile -sort /mahoutlda/ldaoutput/docTopics 
     ./mahout vectordump -i /mahoutlda/ldaoutput/model/model-1 -o /mahoutlda/ldaoutput/output-model-1 -p true -d /mahoutlda/outputsparsedvec/dictionary.file-0 -dt sequencefile -sort /mahoutlda/ldaoutput/models/model-1
