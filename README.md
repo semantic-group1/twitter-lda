@@ -57,3 +57,9 @@ Apache Mahout
     
     ./mahout vectordump -i /mahoutlda/ldaoutput/docTopics -o /mahoutlda/ldaoutput/output-docTopics -p true -d /mahoutlda/outputsparsedvec/dictionary.file-0 -dt sequencefile -sort /mahoutlda/ldaoutput/docTopics 
     ./mahout vectordump -i /mahoutlda/ldaoutput/model/model-1 -o /mahoutlda/ldaoutput/output-model-1 -p true -d /mahoutlda/outputsparsedvec/dictionary.file-0 -dt sequencefile -sort /mahoutlda/ldaoutput/models/model-1
+
+Post-Processing 
+===
+    python vectorize.py <input-path> <queryfile>
+    python CDS.py <input-path> <querfile>
+    python output.py <input-path> <final-output-path>
