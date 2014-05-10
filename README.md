@@ -42,4 +42,5 @@ To use Lucene Indexer to index all the files in the given directory,
     ./indexDocuments.sh <command> <InputDirectory>
     
 To search for queries (in a queryfile) across the Lucene index, we use the following script
+
     ./searchDocuments.sh <command/queryFile>
