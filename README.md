@@ -34,3 +34,12 @@ Generating Sequence Files for Tweets
     hadoop jar SequenceFileWrite.jar com.sarcasm.dpp.SequenceFileWriteDemo <InputFileNameContainingAllTweets> <OutputSeqFileName>
    
  The above code accepts a file containing all the tweets and prepares a sequence file wherein the key of the sequence file equals the TweetID and the value equals the Tweet. This forms the input for the second stage of Mahout cvb program.  
+
+Apache Lucene Scripts
+====
+To use Lucene Indexer to index all the files in the given directory,
+
+    ./indexDocuments.sh <command> <InputDirectory>
+    
+To search for queries (in a queryfile) across the Lucene index, we use the following script
+    ./searchDocuments.sh <command/queryFile>
