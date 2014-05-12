@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<property>
+    <name>mapred.map.child.java.opts</name>
+    <value>-Xmx13024m</value>
+    <description>heap size for map tasks </description>
+  </property>
+ 
+ 
+  <property>
+    <name>mapred.reduce.child.java.opts</name>
+    <value>-Xmx13024m</value>
+    <description>heap size for reduce tasks </description>
+  </property>
+  <property><name>mapred.output.committer.class</name><value>org.apache.hadoop.mapred.DirectFileOutputCommitter</value></property>
+  <property><name>mapred.reduce.tasks.speculative.execution</name><value>true</value></property>
+  <property><name>mapred.tasktracker.map.tasks.maximum</name><value>12</value></property>
+  <property><name>mapred.task.tracker.http.address</name><value>0.0.0.0:9103</value></property>
+  <property><name>mapred.map.tasks.speculative.execution</name><value>true</value></property>
+  <property><name>mapred.userlog.retain.hours</name><value>48</value></property>
+  <property><name>mapred.job.reuse.jvm.num.tasks</name><value>20</value></property>
+  <property><name>io.sort.factor</name><value>48</value></property>
+  <property><name>mapred.reduce.parallel.copies</name><value>20</value></property>
+  <property><name>tasktracker.http.threads</name><value>60</value></property>
+  <property><name>mapred.reduce.tasks</name><value>15</value></property>
+  <property><name>hadoop.job.history.user.location</name><value>none</value></property>
+  <property><name>mapred.job.tracker.handler.count</name><value>64</value></property>
+  <property><name>mapred.map.output.compression.codec</name><value>org.apache.hadoop.io.compress.SnappyCodec</value></property>
+  <property><name>mapred.output.direct.NativeS3FileSystem</name><value>true</value></property>
+  <property><name>mapred.reduce.tasksperslot</name><value>1.75</value></property>
+  <property><name>mapred.tasktracker.reduce.tasks.maximum</name><value>3</value></property>
+  <property><name>mapred.compress.map.output</name><value>true</value></property>
+  <property><name>mapred.output.compression.codec</name><value>org.apache.hadoop.io.compress.GzipCodec</value></property>
+  <property><name>mapred.job.tracker.http.address</name><value>0.0.0.0:9100</value></property>
+  <property><name>mapred.local.dir</name><value>/mnt/var/lib/hadoop/mapred,/mnt1/var/lib/hadoop/mapred</value></property>
+  <property><name>mapred.job.tracker</name><value>172.31.6.183:9001</value></property>
+  <property><name>io.sort.mb</name><value>200</value></property>
+</configuration>
